@@ -85,3 +85,8 @@ bool Math::Interval::Appartien(double num)const
     if (!this->RightOpen && this->Max < num)return false;
     return true;
 }
+
+bool Math::Interval::operator[](double num) const
+{
+    return this->Appartien(num);
+}

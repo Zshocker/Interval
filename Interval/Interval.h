@@ -13,8 +13,9 @@ namespace Math {
 		double Maximum()const;
 		double Minimum()const;
 		bool Appartien(double num)const;
+		//supposant que [] fait le meme traitement que Appartien
+		bool operator[](double num)const;
 		Interval& operator+(const Interval& R2)const;
 		void print()const;
 	};
-
 }
