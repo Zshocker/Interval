@@ -8,11 +8,6 @@ Math::Interval::Interval(double min, double max)
     this->Min = min;
     this->Max = max;
 }
-
-Math::Interval::Interval()
-{
-}
-
 Math::Interval::Interval(double min, bool Lopen, double max, bool Ropen)
 {
     assert(min <= max);

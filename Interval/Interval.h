@@ -8,8 +8,7 @@ namespace Math {
 		bool RightOpen = false;
 		bool leftOpen = false;
 	public:
-		Interval(double min, double max);
-		Interval();
+		Interval(double min=0, double max=0);
 		Interval(double, bool, double, bool);
 		double Maximum()const;
 		double Minimum()const;
