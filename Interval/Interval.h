@@ -14,6 +14,7 @@ namespace Math {
 		double Minimum()const;
 		bool Appartien(double num)const;
 		Interval& operator+(const Interval& R2)const;
+		void print()const;
 	};
 
 }

@@ -2,6 +2,7 @@
 #include "Interval.h"
 #include<assert.h>
 using namespace Math;
+using namespace std;
 Math::Interval::Interval(double min, double max)
 {
     assert(min <= max);
@@ -53,6 +54,16 @@ Math::Interval& Math::Interval::operator+(const Interval& R2) const
        if (this->leftOpen && R2.leftOpen)New->leftOpen = true;
    }
    return  *New;
+}
+
+void Math::Interval::print() const
+{
+    char c,c2;
+    if (this->leftOpen) c = ']';
+    else  c = '[';
+    if (this->RightOpen) c2 = '[';
+    else c2 = ']';
+    cout << c << this->Min << " , " << this->Max << c2 << endl;
 }
 
 double Math::Interval::Maximum()const
